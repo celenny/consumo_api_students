@@ -67,7 +67,6 @@
         {
             "id": 1,
             "name": "Levi Ackerman",
-            "age": 31,
             "coursesName": [
                 "Academia do Flutter"
             ],
