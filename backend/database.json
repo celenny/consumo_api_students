@@ -1,0 +1,106 @@
+{
+    "users": [
+        {
+            "id": 0,
+            "name": "Rodrigo Rahman",
+            "email": "rodrigorahman@academiadoflutter.com.br",
+            "password": "123"
+        },
+        {
+            "id": 1,
+            "name": "Guilherme",
+            "email": "guilherme@gmail.com",
+            "password": "1234"
+        }
+    ],
+    "products": [
+        {
+            "id": 0,
+            "title": "Academia do flutter"
+        },
+        {
+            "id": 1,
+            "title": "Jornada Dart"
+        },
+        {
+            "id": 2,
+            "title": "Jornada GetX"
+        }
+    ],
+    "students": [
+        {
+            "id": 0,
+            "name": "Celenny Cristhyne",
+            "age": 21,
+            "coursesNames":["Academia do Flutter", "Jornada GetX", "Jornada Dart"],
+            "courses":[
+                {
+                    "id":1,
+                    "name": "Academia do Flutter",
+                    "isStudent": true
+                }, 
+                {
+                    "id":2,
+                    "name":"Jornada GetX",
+                    "isStudent": false
+                },
+                {
+                    "id": 3,
+                    "name": "Jornada Clean Code",
+                    "isStudent": false
+                }
+            ],
+            "address": {
+                "street": "Rua Dart",
+                "number": "404",
+                "CEP": "09152252222",
+                "city":{
+                    "id": 1,
+                    "name": "Santo André"
+                },
+                "telephone":{
+                    "ddd": 11,
+                    "telephone": "985708555"
+                }
+            }
+        },
+        {
+            "id": 1,
+            "name": "Levi Ackerman",
+            "age": 31,
+            "coursesName": [
+                "Academia do Flutter"
+            ],
+            "courses":[
+                {
+                    "id":1,
+                    "name": "Academia do Flutter",
+                    "isStudent": true
+                }, 
+                {
+                    "id":2,
+                    "name":"Jornada GetX",
+                    "isStudent": true
+                },
+                {
+                    "id": 3,
+                    "name": "Jornada Clean Code",
+                    "isStudent": false
+                }
+            ],
+            "address": {
+                "street": "Rua Rose",
+                "number": "810",
+                "CEP": "09152252222",
+                "city":{
+                    "id": 1,
+                    "name": "Paris"
+                },
+                "telephone":{
+                    "ddd": 20,
+                    "telephone": "985755555"
+                }
+            }
+        }
+    ]
+}
