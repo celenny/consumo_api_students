@@ -1,4 +1,6 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:convert';
+
 import 'address.dart';
 import 'course.dart';
 
@@ -39,9 +41,8 @@ class Student {
     return Student(
       id: map['id'] ?? 0,
       name: map['name'] ?? '',
-      age: map['age'] ?? '',
-      coursesNames: List<String>.from(map['coursesNames']),
-      // coursesNames: map['coursesNames'].cast<String>(), (outra forma de tranformar p list<string>)
+      age: map['age'],
+      coursesNames: List<String>.from((map['coursesNames']  ?? <String>[])),
       courses: map['courses']
         ?.map<Course>((courseMap) => Course.fromMap(courseMap))
         .toList() ?? <Course>[],
@@ -50,4 +51,9 @@ class Student {
   }
 
   factory Student.fromJson(String json) => Student.fromMap(jsonDecode(json));
+
+  @override
+  String toString() {
+    return 'Student: $name($id)';
+  }
 }
