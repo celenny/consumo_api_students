@@ -19,11 +19,12 @@ class Telephone {
   String toJson() => jsonEncode(toMap());
 
   factory Telephone.fromMap(Map<String, dynamic> map) {
-    return Telephone(ddd: map['ddd'], telephone: map['telephone']);
+    return Telephone(
+      ddd: map['ddd'] ?? 0,
+      telephone: map['telephone'] ?? '',
+    );
   }
 
-  factory Telephone.fromJson(String json) {
-    final jsonMap = jsonDecode(json);
-    return Telephone.fromMap(jsonMap);
-  }
+  factory Telephone.fromJson(String json)  => Telephone.fromMap(jsonDecode(json));
+ 
 }
