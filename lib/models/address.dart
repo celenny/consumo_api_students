@@ -5,14 +5,14 @@ import 'telephone.dart';
 class Address {
   String street;
   String number;
-  String cep;
+  String zipCode;
   City city;
   Telephone telephone;
 
   Address({
     required this.street,
     required this.number,
-    required this.cep,
+    required this.zipCode,
     required this.city,
     required this.telephone,
   });
@@ -21,7 +21,7 @@ class Address {
     return {
       'street': street,
       'number': number,
-      'CEP': cep,
+      'zipCode': zipCode,
       'city': city.toMap(),
       'telephone': telephone.toMap(),
     };
@@ -33,7 +33,7 @@ class Address {
     return Address(
       street: map['street'] ?? '',
       number: map['number'] ?? '',
-      cep: map['cep'] ?? '', 
+      zipCode: map['zipCode'] ?? '', 
       city: City.fromMap(map['city'] ?? <String, dynamic>{}),
       telephone: Telephone.fromMap(map['telephone'] ?? <String, dynamic>{}),
     );

@@ -90,7 +90,7 @@
             "address": {
                 "street": "Rua Rose",
                 "number": "810",
-                "CEP": "09152252222",
+                "zipCode": "09152252222",
                 "city":{
                     "id": 1,
                     "name": "Paris"
